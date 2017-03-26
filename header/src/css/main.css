@@ -1,0 +1,89 @@
+html {
+	font-family: Verdana;
+	font-size: 18px;
+}
+
+body {
+	margin: 0;
+}
+
+.div {
+	background-image: url("../images/fon.jpg");
+	display: inline-block;
+	border: 1px solid #444;
+	height: 100%;
+	width: 100%;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+
+.img {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.ul {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+	text-align: justify;
+	white-space: normal;
+	vertical-align: middle;
+}
+
+.ul:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	font-size: 0;
+	height: 0;
+}
+
+.ul-2 {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+.li-menu {
+	display: inline-block;
+	font-size: 18px;
+	position: relative;
+	border: 1px solid #444;
+	border-left: none;
+	border-bottom: none;
+	border-right: none;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.li-img {
+	display: inline-block;
+	width: 30%;
+}
+
+.a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 5px;	
+	color: black;
+}
+
+.li-menu:hover > .ul-2 {
+	display: block;
+}
+
+.a:active {
+	color: white;
+}
+
+.li-menu:hover,
+.ul-2 > .li-menu > .a:hover {
+	background-color: gray;
+}
